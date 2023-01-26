@@ -4,6 +4,25 @@
 
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
+// const lastIndexGrades = grades.length -1;
+let counter = 0;
+
+function findCumLaude(list) {
+    const lastIndexGrades = list.length -1;
+    for (let i = 0; i < lastIndexGrades; i++) {
+        if (list[i] >= 8) {
+            counter = counter + 1;
+            // return counter;
+            // console.log(counter);
+            // return list[i];
+        }
+    }
+    return counter;
+}
+
+const end = findCumLaude(grades);
+console.log(end);
+
 /* Opdracht  1: Cum Laude */
 
 /* 1a: Script schrijven  */
@@ -16,6 +35,12 @@ const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 // ---- Verwachte uitkomst: 6
 
+
+// Bekijk ieder cijfer in deze cijfers-array --> for-loop
+// Stel voor ieder cijfer vast of het voldoet aan de voorwaarde (>=8)
+//  Zo ja: log dit in een counter
+//  Zo nee: doe niets (en ga dus door naar de volgende)
+// return de counter
 
 /*  1b: Omschrijven tot een herbruikbare functie   */
 // Schrijf een functie genaamd cumLaude, die een array van cijfers verwacht (zoals grades) en het aantal Cum laude studenten teruggeeft. Gebruik hiervoor jouw antwoord van 1a.
