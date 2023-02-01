@@ -32,7 +32,7 @@ console.log(cumLaude(grades));
 console.log(cumLaude([6, 4, 5]));
 console.log(cumLaude([8, 9, 4, 6, 10]));
 
-// Geeft een lege regel voor het overzicht ;) :
+// Lege regel voor het overzicht ;) :
 console.log(" ");
 
 // Bekijk ieder cijfer in deze cijfers-array --> for-loop
@@ -81,7 +81,7 @@ console.log(averageGrade(grades));
 console.log(averageGrade([6, 4, 5]));
 console.log(averageGrade([8, 9, 4, 6, 10]));
 
-// Geeft een lege regel voor het overzicht ;) :
+// Lege regel voor het overzicht ;) :
 console.log(" ");
 
 /* 2b: Omschrijven tot een herbruikbare functie */
@@ -113,7 +113,7 @@ console.log(averageGrade2b(grades));
 console.log(averageGrade2b([6, 4, 5]));
 console.log(averageGrade2b([8, 9, 4, 6, 10]));
 
-// Geeft een lege regel voor het overzicht ;) :
+// Lege regel voor het overzicht ;) :
 console.log(" ");
 
 /* Bonusopdracht: hoogste cijfer */
