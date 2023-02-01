@@ -18,23 +18,6 @@
 const grades = [9, 8, 5, 7, 7, 4, 9, 8, 8, 3, 6, 8, 5, 6];
 
 
-function cumLaude(list) {
-    let counter = 0;
-    for (let i = 0; i < list.length; i++) {
-        if (list[i] >= 8) {
-            counter = counter + 1;
-        }
-    }
-    return counter;
-}
-
-console.log(cumLaude(grades));
-console.log(cumLaude([6, 4, 5]));
-console.log(cumLaude([8, 9, 4, 6, 10]));
-
-// Lege regel voor het overzicht ;) :
-console.log(" ");
-
 // Bekijk ieder cijfer in deze cijfers-array --> for-loop
 // Stel voor ieder cijfer vast of het voldoet aan de voorwaarde (>=8)
 //  Zo ja: log dit in een counter
@@ -52,7 +35,22 @@ console.log(" ");
 // cumLaude([6, 4, 5]) geeft 0
 // cumLaude([8, 9, 4, 6, 10]) geeft 3
 
+function cumLaude(list) {
+    let counter = 0;
+    for (let i = 0; i < list.length; i++) {
+        if (list[i] >= 8) {
+            counter = counter + 1;
+        }
+    }
+    return counter;
+}
 
+console.log(cumLaude(grades));
+console.log(cumLaude([6, 4, 5]));
+console.log(cumLaude([8, 9, 4, 6, 10]));
+
+// Lege regel voor het overzicht ;) :
+console.log(" ");
 
 
 /* Opdracht  2: Gemiddeld cijfer */
@@ -99,19 +97,19 @@ console.log(" ");
 // Zorg ervoor dat het gemiddelde cijfer dat wordt teruggegeven uit de functie netjes wordt afgerond op twee decimalen.
 // Tip: Google is your best friend!
 
-function averageGrade2b(list2b) {
-    let counter2b = 0;
-    for (let i = 0; i < list2b.length; i++) {
-        counter2b = counter2b + list2b[i];
+function averageGrade2c(list2c) {
+    let counter2c = 0;
+    for (let i = 0; i < list2c.length; i++) {
+        counter2c = counter2c + list2c[i];
     }
-    let num = counter2b/list2b.length;
+    let num = counter2c/list2c.length;
     let n = num.toFixed(2);
     return n;
 }
 
-console.log(averageGrade2b(grades));
-console.log(averageGrade2b([6, 4, 5]));
-console.log(averageGrade2b([8, 9, 4, 6, 10]));
+console.log(averageGrade2c(grades));
+console.log(averageGrade2c([6, 4, 5]));
+console.log(averageGrade2c([8, 9, 4, 6, 10]));
 
 // Lege regel voor het overzicht ;) :
 console.log(" ");
@@ -126,6 +124,17 @@ console.log(" ");
 // Log het antwoord in de terminal.
 
 // ---- Verwachte uitkomst: 9
+
+
+/* 3b: Omschrijven tot een herbruikbare functie */
+// Schrijf een functie genaamd highestGrade, die een array van cijfers verwacht (zoals grades) en het hoogste cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 3a.
+// Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
+// Log het antwoord in de terminal.
+
+// ---- Verwachte uitkomsten:
+// highestGrade(grades) geeft 9
+// highestGrade([6, 4, 5]) geeft 6
+// highestGrade([8, 9, 4, 6, 10]) geeft 10
 
 function highestGrade(list3a) {
     let counter3a = list3a[0];
@@ -142,13 +151,3 @@ function highestGrade(list3a) {
 console.log(highestGrade(grades));
 console.log(highestGrade([6, 4, 5]));
 console.log(highestGrade([8, 9, 4, 6, 10]));
-
-/* 3b: Omschrijven tot een herbruikbare functie */
-// Schrijf een functie genaamd highestGrade, die een array van cijfers verwacht (zoals grades) en het hoogste cijfer teruggeeft. Gebruik hiervoor jouw antwoord van 3a.
-// Zorg ervoor dat jouw functie ook werkt als we een andere array willen checken, zoals bijvoorbeeld: [6, 4, 5] of [8, 9, 4, 6, 10].
-// Log het antwoord in de terminal.
-
-// ---- Verwachte uitkomsten:
-// highestGrade(grades) geeft 9
-// highestGrade([6, 4, 5]) geeft 6
-// highestGrade([8, 9, 4, 6, 10]) geeft 10
